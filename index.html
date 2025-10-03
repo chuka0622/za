@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Gallery — Шууд харах</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h2>Таны сонголт — Загварын хувцас</h2>
+
+    <div class="products" id="productGrid">
+      <!-- Хувцасны картууд -->
+      <article class="card" style="--i:0">
+        <img src="bomb.jpg" alt="Хувцас 1" />
+        <div class="badge">Шинэ</div>
+        <div class="meta">
+          <div class="title">Jacket</div>
+          <div class="price">₮149,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:1">
+        <img src="bomber.jpg" alt="Хувцас 2" />
+        <div class="meta">
+          <div class="title">Eye Hoodie</div>
+          <div class="price">₮189,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:2">
+        <img src="hodei.jpg" alt="Хувцас 3" />
+        <div class="meta">
+          <div class="title">White Shirt</div>
+          <div class="price">₮109,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:3">
+        <img src="hoodei.jpg" alt="Хувцас 4" />
+        <div class="meta">
+          <div class="title">Bomber</div>
+          <div class="price">₮69,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:4">
+        <img src="jack.jpg" alt="Хувцас 5" />
+        <div class="meta">
+          <div class="title">Wind Jacket</div>
+          <div class="price">₮69,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:5">
+        <img src="jacket.jpg" alt="Хувцас 6" />
+        <div class="meta">
+          <div class="title">Top</div>
+          <div class="price">₮69,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:6">
+        <img src="polo.jpg" alt="Хувцас 7" />
+        <div class="meta">
+          <div class="title">Hoodie</div>
+          <div class="price">₮69,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:7">
+        <img src="shirt.jpg" alt="Хувцас 8" />
+        <div class="meta">
+          <div class="title">Leather Jacket</div>
+          <div class="price">₮69,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:8">
+        <img src="sorochig.jpg" alt="Хувцас 9" />
+        <div class="meta">
+          <div class="title">Polo Shirt</div>
+          <div class="price">₮69,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:9">
+        <img src="tsamts.jpg" alt="Хувцас 10" />
+        <div class="meta">
+          <div class="title">Shirt</div>
+          <div class="price">₮79,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+
+      <article class="card" style="--i:10">
+        <img src="umd.jpg" alt="Хувцас 11" />
+        <div class="meta">
+          <div class="title">Pants</div>
+          <div class="price">₮78,000</div>
+          <button class="small">Quick view</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card" role="document">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <img id="modalImg" src="" alt="product" />
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding:6px;">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <h3 id="modalTitle" style="margin:0">Бүтээгдэхүүн</h3>
+            <div class="small muted" id="modalSub">Тодорхойлолт</div>
+          </div>
+          <button class="close-btn">✕</button>
+        </div>
+        <div>
+          <div id="modalPrice" style="font-weight:700;font-size:20px">₮0</div>
+          <p class="muted small">Өнгө/Размер сонгох хэсэг, хүргэлт болон буцаалттай мэдээлэл энд байршина.</p>
+        </div>
+
+        <div style="display:flex;gap:10px;margin-top:auto">
+          <button class="cta" style="flex:1">Сагс руу нэмэх</button>
+          <button style="flex:1;border-radius:10px;border:1px solid rgba(15,23,42,0.06);background:transparent">Дэлгэрэнгүй</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
